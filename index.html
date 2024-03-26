@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sura Atta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="home">
+        <div class="hero">
+            <div class="background-image left-image"></div>
+            <div class="background-image right-image"></div>
+            <nav>
+                <div class="nav-container">
+                    <div class="nav-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+
+                        <!-- <img src=""> -->
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hero-container">
+                <h1>FrontEnd<br>Developer.</h1>
+                <div class="hero-buttons">
+                    <a href="#contact"><button class="hero-button" type="button">Contact me</button></a>
+                    <button class="hero-button cv" type="button">Downlode CV</button>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h1 class="text-styling">About me</h1>
+        </div>
+        <div class="about-container">
+            <div class="about-left">
+                <img class="girl" src="images/girl.png" height="450px" width="450px">
+            </div>
+            <div class="about-right">
+                <div class="about-cards">
+                    <div class="about-card1">
+                        <h1 class="education">
+                            Education
+                        </h1>
+                        <div class="education-container">
+                            <div class="education-text">
+                                <h2>Bachelor <br><br><b>Computer Science</b></h2>
+                                <h3>Al- Nahrain University</h3>
+                                <h4>2019 - 2023</h4>
+                            </div>
+                            <div class="education-img">
+                                <img src="images/Nahrain1987.jpg" height="100px" width="100px"
+                                    style="border-radius: 60px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card2">
+                        <div class="slider">
+                            <div class="slide-container">
+                                <img class="slide" src="images/Dashboard.png" alt="Image 1">
+                                <img class="slide" src="images/Dashboard.png" alt="Image 2">
+                                <img class="slide" src="images/Dashboard.png" alt="Image 3">
+                            </div>
+                            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills" id="skills"> 
+            <h1 class="text-styling">Skills</h1>
+
+        </div>
+        <div class="projects" id="projects">
+            <h1 class="text-styling">My Projects</h1>
+            <div class="projects-image left-projects"></div>
+            <div class="projects-image right-projects"></div>
+            <div class="projects-container">
+                <div class="cards-row1">
+                    <div id="card"></div>
+                    <div class="project-card-hover">
+                        <div class="project-card " id="card1">
+                            <img id='Petty' src="images/petty4.png">
+                            <h1>Petty Application</h1>
+                            <p>A store application that provides customers with a user-friendly interface for browsing
+                                and purchasing
+                                products online using Flutter.</p>
+                        </div>
+                        <a class="readMore" href="https://github.com/SuraAtta/fourth-stage-project-frontend"><button
+                                class="readMore" type="submit">Read More</button></a>
+                    </div>
+                    <div class="project-card-hover">
+                        <div class="project-card " id="card2">
+                            <img id='Dashboard' src="images/Dashboard2.png">
+                            <h1>Petty Dashboard</h1>
+                            <p>E-commerce Application dashboard using Django.</p>
+                        </div>
+                        <a class="readMore" href="https://github.com/SuraAtta/fourth-stage-project"><button
+                                class="readMore" type="submit">Read More</button></a>
+                    </div>
+                    <div id="card"></div>
+                </div>
+                <div class="cards-row2">
+                    <div class="project-card-hover">
+                        <div class="project-card " id="card3">
+                            <h1>Project 3</h1>
+                        </div>
+                        <a href="https://example.com" class="readMore">
+                            <button class="readMore" type="submit">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <h1 class="text-styling">Contact</h1>
+            <div class="container">
+                <div class="screen">
+                    <div class="screen-body">
+                        <div class="contact-form left">
+                            <div class="app-title">
+                                <h1>Get in touch</h1>
+
+                                <p>I am very approachable, I would,
+                                    love to hear from you.<br> Feel free to
+                                    email me or contact me on my social
+                                    media accounts.<br>
+                                    <br><br>
+                                    Thank you for your time.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <div class="form">
+                                <div class="form-group">
+                                    <input class="form-input" id="name" name="name" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-input" id="email" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-input" id="no" name="no" placeholder="Contact Noumber">
+                                </div>
+                                <div class="form-group message">
+                                    <input class="form-input" id="message" name="message" placeholder="Message"
+                                        required>
+                                </div>
+                                <div class="form-group buttons">
+                                    <button class="form-button" type="submit">SEND</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <div class="footer">
+
+    </div>
+    <footer id="footer" class="">
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/SuraAtta">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/sura-atta/">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/sura.atta/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+        </ul>
+        <p>&copy;2024 Sura Atta | All Rights Reserved</p>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
