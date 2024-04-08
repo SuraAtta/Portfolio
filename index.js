@@ -1,18 +1,18 @@
-window.addEventListener('scroll', function () {
-    var footer = document.getElementById('footer');
-    var scrollPosition = window.scrollY + window.innerHeight;
-    var body = document.body,
-        html = document.documentElement;
+// window.addEventListener('scroll', function () {
+//     var footer = document.getElementById('footer');
+//     var scrollPosition = window.scrollY + window.innerHeight;
+//     var body = document.body,
+//         html = document.documentElement;
 
-    var documentHeight = Math.max(body.scrollHeight, body.offsetHeight,
-        html.clientHeight, html.scrollHeight, html.offsetHeight);
+//     var documentHeight = Math.max(body.scrollHeight, body.offsetHeight,
+//         html.clientHeight, html.scrollHeight, html.offsetHeight);
 
-    if (scrollPosition >= body.offsetHeight) {
-        footer.classList.add('visible');
-    } else {
-        footer.classList.remove('visible');
-    }
-});
+//     if (scrollPosition >= documentHeight) {
+//         footer.classList.add('visible');
+//     } else {
+//         footer.classList.remove('visible');
+//     }
+// });
 // index.js
 document.addEventListener("DOMContentLoaded", function () {
     // Options for the observer

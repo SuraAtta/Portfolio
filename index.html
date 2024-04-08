@@ -70,7 +70,7 @@
                     <div class="about-card2">
                         <div class="slider">
                             <div class="slide-container">
-                                <img class="slide" src="images/cs50 1-min.png" alt="Image 1">
+                                <img class="slide" src="images/cs50 1-min.png" alt="Image 1" height="80%" width="80%">
                                 <img class="slide" src="images/irex 1-min.png" alt="Image 2">
                                 <img class="slide" src="images/Unicoding-min.png" alt="Image 3">
                                 <img class="slide" src="images/StartUp Weekend-min.png" alt="Image 4">
@@ -185,68 +185,67 @@
                         </div>
                     </div>
                 </div>
-    </section>
 
-    <div class="footer">
+            </div>
+            <footer id="footer" class="">
+                <ul class="social-icon">
+                    <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/SuraAtta"
+                            target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link"
+                            href="https://www.linkedin.com/in/sura-atta/" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
+                    <li class="social-icon__item"><a class="social-icon__link"
+                            href="https://www.instagram.com/sura.atta/" target="_blank">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                </ul>
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+                </ul>
+                <p>&copy;2024 Sura Atta | All Rights Reserved</p>
+            </footer>
+        </div>
 
-    </div>
-    <footer id="footer" class="">
-        <ul class="social-icon">
-            <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/SuraAtta"
-                    target="_blank">
-                    <ion-icon name="logo-github"></ion-icon>
-                </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/sura-atta/"
-                    target="_blank">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/sura.atta/"
-                    target="_blank">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a></li>
-        </ul>
-        <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
-            <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
-            <li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li>
-            <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
-        </ul>
-        <p>&copy;2024 Sura Atta | All Rights Reserved</p>
-    </footer>
-    <script type="text/javascript" src="index.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-    <script type="text/javascript">      (function () {
-            emailjs.init("e2n6ljZdeMyEeW-H-");
-        })();
-    </script>
+        <script type="text/javascript">      (function () {
+                emailjs.init("e2n6ljZdeMyEeW-H-");
+            })();
+        </script>
 
-    <script>
-        // listen to the form submission
-        document
-            .getElementById("form")
-            .addEventListener("submit", function (event) {
-                event.preventDefault();
+        <script>
+            // listen to the form submission
+            document
+                .getElementById("form")
+                .addEventListener("submit", function (event) {
+                    event.preventDefault();
 
-                const serviceID = "service_zg7srss";
-                const templateID = "template_ws1ercc";
+                    const serviceID = "service_zg7srss";
+                    const templateID = "template_ws1ercc";
 
-                // send the email here
-                emailjs.sendForm(serviceID, templateID, this).then(
-                    (response) => {
-                        console.log("SUCCESS!", response.status, response.text);
-                        alert("SUCCESS!");
-                    },
-                    (error) => {
-                        console.log("FAILED...", error);
-                        alert("FAILED...", error);
-                    }
-                );
-            });
-    </script>
+                    // send the email here
+                    emailjs.sendForm(serviceID, templateID, this).then(
+                        (response) => {
+                            console.log("SUCCESS!", response.status, response.text);
+                            alert("SUCCESS!");
+                        },
+                        (error) => {
+                            console.log("FAILED...", error);
+                            alert("FAILED...", error);
+                        }
+                    );
+                });
+        </script>
 </body>
 
 </html>

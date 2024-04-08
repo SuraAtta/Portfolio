@@ -380,7 +380,8 @@ nav h1 {
     display: flex;
     justify-content: center;
     align-items: top;
-    padding-top: 20px;
+    padding: 20px;
+    
     width: 100%;
     text-align: center;
 }
@@ -435,7 +436,6 @@ nav h1 {
     grid-template-rows: 35% 60%;
     height: 100%;
     width: 100%;
-    margin: 20px;
     padding: 15px;
     text-align: center;
 }
@@ -469,21 +469,21 @@ nav h1 {
 }
 
 .about-card2 {
-    background-color: #c6c6c6;
-    width: 80%;
     background-color: #2954a394;
+    width: 80%;
     border-radius: 15px;
     margin: 20px;
     text-align: center;
+    height: 80%;
 }
-.about-card2.light-mode {
+/* .about-card2.light-mode {
     background-color: #c6c6c6;
     width: 80%;
     background-color: #2954a3c4;
     border-radius: 15px;
     margin: 20px;
     text-align: center;
-}
+} */
 
 .education {
     text-align: center;
@@ -568,8 +568,7 @@ nav h1 {
         justify-items: center;
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
-        height: 100%;
-        width: 100%;
+        width: 95%;
         text-align: center;
     }
 
@@ -582,6 +581,7 @@ nav h1 {
         grid-template-rows: 20% 80%;
         justify-items: start;
         align-items: center;
+        margin: 0;
     }
 
     .about-card2 {
@@ -590,7 +590,6 @@ nav h1 {
         background-color: #2954a394;
         border-radius: 15px;
         text-align: center;
-        margin: 10px;
     }
 
 
@@ -628,6 +627,20 @@ nav h1 {
         display: flex;
         padding: 10px;
     }
+    .slider {
+        height: 240px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .slide {
+        height: 240px;
+        padding: 10px;
+
+    }
 
 }
 
@@ -641,7 +654,6 @@ nav h1 {
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    height: 380px;
 }
 
 .slide-container {
@@ -651,7 +663,7 @@ nav h1 {
 
 .slide {
     width: 100%;
-    height: 380px;
+    height: 90%;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -726,6 +738,7 @@ nav h1 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 
 .entire-content {
@@ -832,6 +845,7 @@ nav h1 {
     text-align: center;
     min-height: 130vh;
     position: relative;
+    margin-bottom: 100px;
     margin-bottom: 150px;
     opacity: 1.0;
     width: 100%;
@@ -1029,7 +1043,7 @@ nav h1 {
     #card1 {
         grid-area: 1 / 1 / 2 / 2;
         height: 400px;
-        width: 90%px;
+        width: 90%;
         background-color: #2954a394;
         border-radius: 15px;
         margin: 20px;
@@ -1037,7 +1051,7 @@ nav h1 {
 
     #card2 {
         height: 400px;
-        width: 90%px;
+        width: 90%;
         background-color: #2954a394;
         border-radius: 15px;
         margin: 20px;
@@ -1065,6 +1079,7 @@ nav h1 {
 
     .projects {
         min-height: 150vh;
+        padding-bottom: 0;
     }
 
     .left-projects {
@@ -1072,17 +1087,17 @@ nav h1 {
     }
 
     #Petty {
-        width: 300px;
+        width: 100%;
         height: 200px;
     }
 
     #Dashboard {
-        width: 300px;
+        width: 100%;
         height: 200px;
     }
 
     .projects-container {
-        background-color: #c961de;
+        /* background-color: #c961de; */
         /* height:min-content; */
         display: grid;
         grid-template-columns: 1fr;
@@ -1093,12 +1108,13 @@ nav h1 {
 
     .cards-row1 {
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
 
     #card1 {
         grid-area: 1 / 1 / 2 / 2;
         height: 400px;
-        width: 350px;
+        width: 90%;
         background-color: #2954a394;
         border-radius: 15px;
         margin: 20px;
@@ -1106,7 +1122,7 @@ nav h1 {
 
     #card2 {
         height: 400px;
-        width: 350px;
+        width: 90%;
         background-color: #2954a394;
         border-radius: 15px;
         margin: 20px;
@@ -1114,7 +1130,7 @@ nav h1 {
 
     #card3 {
         height: 400px;
-        width: 350px;
+        width: 90%;
         background-color: #2954a394;
         border-radius: 15px;
         margin: 20px;
@@ -1153,7 +1169,8 @@ input {
 
 .container {
     flex: 0 1 600px;
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: 0;
     padding: 10px;
 }
 
@@ -1320,13 +1337,13 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 150px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    opacity: 1;
+    /* transition: opacity 0.5s ease; */
     z-index: 1;
 }
 
@@ -1398,7 +1415,7 @@ footer {
         width: 100%;
         height: 150px;
         padding: 10px 0;
-        position: fixed;
+        position: relative;
         font-size: 16px;
     }
 
