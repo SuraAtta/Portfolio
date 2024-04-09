@@ -119,7 +119,7 @@ nav h1 {
 }
 
 @media screen and (max-width: 520px) {
-    .nav-container {
+    .nav-links {
         display: none;
     }
 }
@@ -337,6 +337,9 @@ nav h1 {
 
 
 @media screen and (max-width: 520px) {
+    h1{
+        font-size: 20px;
+    }
 
     .background-image {
         width: 100%;
@@ -1526,3 +1529,78 @@ footer {
         justify-content: space-around;
     }
 }
+
+
+
+
+
+/* -----------------------------burger -------------------------------- */
+.hamburger {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    z-index: 97;
+    background: #2954a300;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 100px;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    margin: 5px auto;
+  }
+
+  /* Style the menu */
+  .menu {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    right: -100%;
+    width: 200px;
+    height: 100%;
+    background: #2954a3ee;
+    z-index: 98;
+    transition: right 0.3s ease-out;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu li:last-child {
+    border-bottom: none;
+  }
+
+  .menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  /* Style the close button */
+  .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 99;
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  /* Show the menu when the hamburger menu is clicked */
+  .hamburger:focus ~ .menu {
+    right: 0;
+  }

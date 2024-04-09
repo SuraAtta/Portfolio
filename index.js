@@ -13,7 +13,10 @@
 //         footer.classList.remove('visible');
 //     }
 // });
-// index.js
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     // Options for the observer
     let options = {
