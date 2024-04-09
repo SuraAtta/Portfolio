@@ -410,12 +410,15 @@ nav h1 {
     display: flex;
 }
 
-#heme-image {
+#theme-image {
     animation: slideFromTop 3s ease forwards;
     animation-direction: alternate;
     transition: 500ms linear;
     position: relative;
     opacity: 0;
+    height:75% ;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -568,7 +571,16 @@ nav h1 {
         color: #ffffff;
         line-height: 24px;
     }
-
+    #theme-image {
+        animation: slideFromTop 3s ease forwards;
+        animation-direction: alternate;
+        transition: 500ms linear;
+        position: relative;
+        opacity: 0;
+        height:300px ;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     
 }
 
@@ -654,10 +666,10 @@ nav h1 {
     .education-text {
         width: 100%;
         text-align: start;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
         color: #ffffff;
-        line-height: 24px;
+        line-height: 20px;
     }
 
     .education-container {
