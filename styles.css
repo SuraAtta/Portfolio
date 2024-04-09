@@ -5,6 +5,7 @@
     font-family: "Josefin Sans", sans-serif;
 
 }
+
 body.light-mode {
     background: #fcd7d6;
     transition: background-color 0.5s;
@@ -30,6 +31,7 @@ body {
     animation: neon 3s infinite;
     font-style: normal;
 }
+
 .text-styling.light-mode {
     font-size: 28px;
     text-transform: uppercase;
@@ -80,7 +82,8 @@ body {
     color: #0F103F;
     padding: 20px 0;
 }
-#navigation{
+
+#navigation {
     color: #fff;
     padding: 20px 0;
 }
@@ -106,6 +109,7 @@ nav h1 {
     margin-right: 40px;
     margin-left: 40px;
 }
+
 .nav-links a.light-mode {
     color: #0F103F;
     text-decoration: none;
@@ -113,6 +117,7 @@ nav h1 {
     margin-right: 40px;
     margin-left: 40px;
 }
+
 @media screen and (max-width: 520px) {
     .nav-container {
         display: none;
@@ -129,6 +134,7 @@ nav h1 {
     position: relative;
 
 }
+
 .hero.light-mode {
     color: #0F103F;
     height: 100vh;
@@ -158,8 +164,9 @@ nav h1 {
     transition: 500ms linear;
     transform: translate3d(0px, 0px, 0px) rotate(358deg);
     transform-style: preserve-3d;
-    
+
 }
+
 .left-image.light-mode {
     background-image: url('images/Illustration\ top\ \(1\).png');
     background-size: 30% auto;
@@ -171,7 +178,7 @@ nav h1 {
     transition: 500ms linear;
     transform: translate3d(0px, 0px, 0px) rotate(358deg);
     transform-style: preserve-3d;
-    
+
 }
 
 
@@ -189,7 +196,7 @@ nav h1 {
 }
 
 
-.right-image.light-mode{
+.right-image.light-mode {
     background-image: url('images/IlustrationBottom.png');
     background-size: 95% auto;
     background-repeat: no-repeat;
@@ -318,6 +325,7 @@ nav h1 {
     margin-bottom: 100px;
     margin: 20px;
 }
+
 .cv {
     background: linear-gradient(to right, #c961deaa, #2954a39a);
 }
@@ -445,6 +453,7 @@ nav h1 {
     align-items: center;
     padding: 20px;
 }
+
 .about-card1.light-mode {
     width: 80%;
     background-color: #2954a3c4;
@@ -456,6 +465,7 @@ nav h1 {
     align-items: center;
     padding: 20px;
 }
+
 .about-card1:hover {
     transition: 500ms linear;
     box-shadow: 0 1px 30px 0 rgba(29, 62, 123, 0.673);
@@ -463,13 +473,17 @@ nav h1 {
 }
 
 .about-card2 {
-    background-color: #2954a394;
     width: 80%;
+    background-color: #2954a394;
     border-radius: 15px;
     margin: 20px;
-    text-align: center;
-    height: 80%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
 }
+
 /* .about-card2.light-mode {
     background-color: #c6c6c6;
     width: 80%;
@@ -519,6 +533,44 @@ nav h1 {
     box-shadow: 0 1px 30px 0 rgba(29, 62, 123, 0.673);
     transition: 1s;
 }
+.n-logo{
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    .education-container {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 1fr;
+        height: 100%;
+        width: 100%;
+        justify-items:center;
+        padding: 0px;
+    }
+
+    .education-img {
+        grid-area: 1 / 2 / 2 / 3;
+        justify-content: end;
+        align-items: center;
+        display: flex;
+    }
+    .n-logo{
+        width: 70px;
+        height: 70px;
+    }
+
+    .education-text {
+        width: 100%;
+        text-align: start;
+        font-size: 12px;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 24px;
+    }
+
+    
+}
 
 @media screen and (max-width: 520px) {
     .about-container {
@@ -554,6 +606,8 @@ nav h1 {
         justify-content: center;
         justify-items: center;
         align-items: center;
+        margin-top: 20px;
+        padding: 0;
     }
 
     .about-cards {
@@ -563,11 +617,12 @@ nav h1 {
         grid-template-columns: 1fr;
         grid-template-rows: 50% 50%;
         width: 95%;
+        height: 100%;
         text-align: center;
+        margin: 0;
     }
 
     .about-card1 {
-        background-color: #c6c6c6;
         width: 100%;
         background-color: #2954a394;
         border-radius: 15px;
@@ -575,16 +630,18 @@ nav h1 {
         grid-template-rows: 20% 80%;
         justify-items: start;
         align-items: center;
-        margin-top: 20px;
+        margin: 10px;
     }
 
     .about-card2 {
-        background-color: #c6c6c6;
         width: 100%;
         background-color: #2954a394;
         border-radius: 15px;
-        text-align: center;
-        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        margin: 10px;
     }
 
 
@@ -605,7 +662,7 @@ nav h1 {
 
     .education-container {
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 80% 20%;
         grid-template-rows: 1fr;
         height: 100%;
         width: 100%;
@@ -622,8 +679,9 @@ nav h1 {
         display: flex;
         padding: 10px;
     }
+
     .slider {
-        height: 240px;
+        height: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -632,12 +690,19 @@ nav h1 {
     }
 
     .slide {
-        height: 240px;
+        height: 100%;
+        width: 100%;
         padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
 
     }
-    .slide-container{
-        height: 100%;
+
+    .slide-container {
+        height: 300px;
     }
 
 }
@@ -695,25 +760,6 @@ nav h1 {
     right: 0;
 }
 
-
-
-
-@media screen and (max-width: 520px) {
-    .slider {
-        height: 240px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
-
-    .slide {
-        height: 240px;
-        padding: 10px;
-
-    }
-}
 
 
 
@@ -846,6 +892,7 @@ nav h1 {
     position: relative;
     opacity: 1.0;
     width: 100%;
+
     h1 {
         margin: 20px;
     }
@@ -994,13 +1041,16 @@ nav h1 {
 }
 
 @media screen and (max-width: 850px) {
-    .card{
+    .card {
         display: none;
         opacity: 0;
     }
+
     .project-card {
         height: 450px;
-        width: 90%;}
+        width: 90%;
+    }
+
     .projects-image {
         width: 100%;
         height: 600px;
