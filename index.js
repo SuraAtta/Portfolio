@@ -15,28 +15,22 @@
 // });
 
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
-    // Options for the observer
     let options = {
         root: null,
         threshold: 0.1,
         rootMargin: "0px"
     };
 
-    // Callback function to execute when observations occur
     let callback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Add a class to animate or directly apply styles
                 if (entry.target.classList.contains("background-image") || entry.target.classList.contains("project-card") || entry.target.classList.contains("screen")) {
                     entry.target.classList.add("slide-in");
                 } else if (entry.target.classList.contains("about-left")) {
                     entry.target.classList.add("fade-in");
                 }
             } else {
-                // Optional: Remove the class if you want the animation to trigger every time
                 if (entry.target.classList.contains("background-image") || entry.target.classList.contains("project-card") || entry.target.classList.contains("screen")) {
                     entry.target.classList.remove("slide-in");
                 } else if (entry.target.classList.contains("about-left")) {
@@ -46,10 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     };
 
-    // Create the observer
     let observer = new IntersectionObserver(callback, options);
 
-    // Target elements to observe
     document.querySelectorAll('.background-image, .project-card, .screen, .about-left').forEach(element => {
         observer.observe(element);
     });
@@ -78,20 +70,6 @@ document.addEventListener("mousemove", function (event) {
         }, 100);
     }
 });
-function sendEmail() {
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "sender@email_address.com",
-        Password: "Enter your password",
-        To: 'surarafe@gmail.com',
-        From: "sender@email_address.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-    })
-        .then(function (message) {
-            alert("mail sent successfully")
-        });
-}
 
 
 
@@ -123,13 +101,11 @@ toggleButton.addEventListener('click', () => {
     localStorage.setItem('theme', currentTheme);
 });
 
-// Check for previously set theme in local storage
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     body.classList.add(savedTheme + '-mode');
 }
 
-// Function to handle button click event
 function handleDownload() {
     const pdfPath = 'images/SuraAtta.pdf';
     const anchor = document.createElement('a');

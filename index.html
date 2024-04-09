@@ -24,24 +24,21 @@
                         <a href="#home">Home</a>
                         <a href="#about">About</a>
                         <a href="#skills">Skills</a>
-
-                        <!-- <img src=""> -->
                         <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
                     </div>
                     <button class="hamburger">
-                    <img src="images/bg image 7-min.png" alt="" width="100px" height="90px">
-                      </button>
-                      <nav class="menu">
+                        <img src="images/bg image 7-min.png" alt="" width="100px" height="90px">
+                    </button>
+                    <nav class="menu">
                         <ul>
-                            <!-- <button class="close">Close</button> -->
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
-                                <li><a href="#skills">Skills</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
-                      </nav>
+                    </nav>
                 </div>
             </nav>
 
@@ -107,17 +104,6 @@
                         <figure class="shadow"><img src="images/matlab-removebg-preview-min.png" /></figure>
                         <figure class="shadow"><img src="images/c-removebg-preview-min.png" /></figure>
                         <figure class="shadow"><img src="images/mysql-min.png" /></figure>
-
-
-                        <!-- <figure class="shadow"><img src="images/flutter-min.png" /></figure>
-                        <figure class="shadow"><img src="images/dart-min.png" /></figure>
-                        <figure class="shadow"><img src="images/java (2)-min.png" /></figure>
-                        <figure class="shadow"><img src="images/php-min.png" /></figure>
-                        <figure class="shadow"><img src="images/python-min.png" /></figure>
-                        <figure class="shadow"><img src="images/matlab-min.png" /></figure>
-                        <figure class="shadow"><img src="images/c-min.png" /></figure>
-                        <figure class="shadow"><img src="images/mysql (1)-min.png" /></figure> -->
-
                     </div>
                 </div>
             </section>
@@ -244,7 +230,6 @@
         </script>
 
         <script>
-            // listen to the form submission
             document
                 .getElementById("form")
                 .addEventListener("submit", function (event) {
@@ -253,7 +238,6 @@
                     const serviceID = "service_zg7srss";
                     const templateID = "template_ws1ercc";
 
-                    // send the email here
                     emailjs.sendForm(serviceID, templateID, this).then(
                         (response) => {
                             console.log("SUCCESS!", response.status, response.text);
