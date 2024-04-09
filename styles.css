@@ -122,6 +122,9 @@ nav h1 {
     .nav-links {
         display: none;
     }
+    .hamburger{
+        display:flex;
+    }
 }
 
 
@@ -543,7 +546,11 @@ nav h1 {
     width: 100px;
     height: 100px;
 }
-
+@media screen and (min-width: 800px) {
+    .hamburger{
+        display:none;
+    }
+}
 @media screen and (max-width: 800px) {
     .education-container {
         display: grid;
@@ -583,6 +590,12 @@ nav h1 {
         height:300px ;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .hamburger{
+        display:flex;
     }
     
 }
