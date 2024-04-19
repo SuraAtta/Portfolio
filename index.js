@@ -103,12 +103,3 @@ downloadBtn = document.querySelector('#download-btn');
 
 downloadBtn.addEventListener('click', handleDownload);
 
-$(document).ready(function() {
-    $('.hamburger').click(function() {
-        $('.menu').css('display', 'block');
-    });
-
-    $('.close').click(function() {
-        $('.menu').css('display', 'none');
-    });
-});
