@@ -1239,11 +1239,6 @@ input {
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 55%;
-
-    h1 {
-        margin: 20px;
-        color: #ffffffc9;
-    }
 }
 
 .container {
@@ -1283,6 +1278,8 @@ input {
     h1 {
         font-size: 26;
         color: #C961DE;
+        -webkit-text-fill-color: #C961DE; 
+
         margin: 0;
         margin-bottom: 7px;
     }
@@ -1290,6 +1287,8 @@ input {
     p {
         font-size: 16;
         color: #ffffff;
+        -webkit-text-fill-color: #ffffff; 
+
         padding-top: 50px;
     }
 }
