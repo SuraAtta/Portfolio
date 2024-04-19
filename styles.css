@@ -1279,7 +1279,7 @@ input {
         font-size: 26;
         color: #C961DE;
         -webkit-text-fill-color: #C961DE; 
-
+        -webkit-opacity: 1; 
         margin: 0;
         margin-bottom: 7px;
     }
@@ -1288,7 +1288,7 @@ input {
         font-size: 16;
         color: #ffffff;
         -webkit-text-fill-color: #ffffff; 
-
+        -webkit-opacity: 1; 
         padding-top: 50px;
     }
 }
