@@ -76,19 +76,19 @@ function moveSlide(n) {
 }
 
 
-const toggleButton = document.getElementById('theme-toggle');
-const body = document.body;
+// const toggleButton = document.getElementById('theme-toggle');
+// const body = document.body;
 
-toggleButton.addEventListener('click', () => {
-    body.classList.toggle('light-mode');
-    const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
-    localStorage.setItem('theme', currentTheme);
-});
+// toggleButton.addEventListener('click', () => {
+//     body.classList.toggle('light-mode');
+//     const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
+//     localStorage.setItem('theme', currentTheme);
+// });
 
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-    body.classList.add(savedTheme + '-mode');
-}
+// const savedTheme = localStorage.getItem('theme');
+// if (savedTheme) {
+//     body.classList.add(savedTheme + '-mode');
+// }
 
 function handleDownload() {
     const pdfPath = 'images/SuraAtta.pdf';
@@ -99,6 +99,16 @@ function handleDownload() {
     anchor.click();
 }
 
-const downloadBtn = document.getElementById('download-btn');
+downloadBtn = document.querySelector('#download-btn');
+
 downloadBtn.addEventListener('click', handleDownload);
 
+$(document).ready(function() {
+    $('.hamburger').click(function() {
+        $('.menu').css('display', 'block');
+    });
+
+    $('.close').click(function() {
+        $('.menu').css('display', 'none');
+    });
+});
