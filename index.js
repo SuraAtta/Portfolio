@@ -1,10 +1,10 @@
 
-setTimeout(function() {
+setTimeout(function () {
     document.getElementById("loading").classList.add("fade-out");
-    setTimeout(function() {
-      document.getElementById("loading").style.display = "none";
-    }, 1000); 
-  }, 2000);
+    setTimeout(function () {
+        document.getElementById("loading").style.display = "none";
+    }, 1000);
+}, 2000);
 
 document.addEventListener("DOMContentLoaded", function () {
     let options = {

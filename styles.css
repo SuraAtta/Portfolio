@@ -528,11 +528,7 @@ nav h1 {
     height: 100px;
 }
 
-@media screen and (min-width: 800px) {
-    .hamburger {
-        display: none;
-    }
-}
+
 
 @media screen and (max-width: 800px) {
     .education-container {
@@ -610,6 +606,7 @@ nav h1 {
 
     #theme-image {
         width: 100%;
+        height: 350px;
     }
 
     .about-right {
@@ -1636,12 +1633,10 @@ footer {
     margin: 0;
     width: 200px;
     height: 100%;
-    background: #2954a394;
+    background: #1e3879c9;
     z-index: 98;
     transition: right 0.3s ease-out;
     right: -200px;
-    /* Change to the width of your menu */
-
 }
 
 .menu ul {
@@ -1664,19 +1659,15 @@ footer {
     text-decoration: none;
 }
 
-.close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 99;
-    background: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
 
 .hamburger:focus~.menu {
     right: 0;
+}
+
+@media screen and (min-width: 800px) {
+    .hamburger {
+        display: none;
+    }
 }
 
 
