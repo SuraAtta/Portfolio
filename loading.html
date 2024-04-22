@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Automatically load index.html</h2>
+  <p id="result"></p>
+  <script>
+    function load() {
+      setTimeout(myURL, 2000);
+      var result = document.getElementById("result");
+      result.innerHTML = `The page will load after a delay of 3 seconds using setTimeout() method.`;
+    }
+
+    function myURL() {
+      window.open("index.html", "_self");
+    }
+
+    // Call the load function to start the delay
+    load();
+  </script>
+</body>
+</html>

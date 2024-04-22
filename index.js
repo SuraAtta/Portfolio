@@ -1,4 +1,8 @@
 
+setTimeout(function() {
+    document.getElementById("loading").style.display = "none";
+}, 2000);
+
 document.addEventListener("DOMContentLoaded", function () {
     let options = {
         root: null,
@@ -76,19 +80,23 @@ function moveSlide(n) {
 }
 
 
-// const toggleButton = document.getElementById('theme-toggle');
-// const body = document.body;
+const toggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+const h1 = document.h1;
 
-// toggleButton.addEventListener('click', () => {
-//     body.classList.toggle('light-mode');
-//     const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
-//     localStorage.setItem('theme', currentTheme);
-// });
 
-// const savedTheme = localStorage.getItem('theme');
-// if (savedTheme) {
-//     body.classList.add(savedTheme + '-mode');
-// }
+toggleButton.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
+
+    localStorage.setItem('theme', currentTheme);
+});
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    body.classList.add(savedTheme + '-mode');
+
+}
 
 function handleDownload() {
     const pdfPath = 'images/SuraAtta.pdf';
@@ -102,4 +110,3 @@ function handleDownload() {
 downloadBtn = document.querySelector('#download-btn');
 
 downloadBtn.addEventListener('click', handleDownload);
-
