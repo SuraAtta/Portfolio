@@ -1066,7 +1066,7 @@ nav h1 {
 .project-card:hover {
     transition: 500ms linear;
     box-shadow: 0 1px 30px 0 rgba(29, 62, 123, 0.673);
-    width: 100%;
+    width: 80%;
     height: 460px;
     filter: blur(3px);
     transition: 1s;
